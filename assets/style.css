@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fondo: rgba(33, 34, 34, 0.445);
+    --letra: rgba(0, 255, 255, 0.788);
+    --fondo2: rgb(107, 106, 106);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: var(--letra);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: var(--fondo2);
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--fondo);
+  }
+
+
+html {
+    background-image: url(./IMG/4k-2048727.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+    background-color: var(--fondo2);
+}
+
+*::selection {
+    background-color: var(--fondo);
+}
+
+header {
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    border: 2px solid var(--fondo2);
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    background-image: url(./IMG/map-of-the-world-2401458_1920.jpg);
+    background-position: center;
+}
+
+.head span {
+    color: var(--letra);
+    border-bottom: 2px solid var(--letra);
+}
+
+.head h1 {
+    background-color: var(--fondo);
+}
+
+.head .fon1:hover, .fon2:hover{
+    color: var(--letra);
+    filter: blur(2px);
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+
+#quiz {
+    width: 50%;
+    margin:auto;
+    padding: 50px;
+    text-align: center;
+    background-color: var(--fondo);
+    border: 2px solid var(--letra);
+    border-radius: 30px;
+    display: none;
+}
+
+#start {
+    width: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid var(--fondo2);
+    border-radius: 10px;
+    background-color: var(--letra);
+}
+
+#start:hover {
+    transform: scale(1.1);
+    border-radius: 30px;
+    color: white;
+    border-color: white;
+    background-color: var(--fondo);
+    transition: ease-in-out 400ms;
+}
+
+
+article h2 {
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+article .answers {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+article .answers button {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--letra);
+}
+
+article .answers button:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    transition: ease-in-out 200ms;
+}
+
+.fondito {
+    background-image: url(./IMG/4k-3155438.jpg);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border: 2px solid var(--fondo2);
+    border-radius: 1000px;
+}
+
+.fondito h2::selection {
+    background-color: var(--letra);
+}
+
+footer {
+    display: block;
+    padding: auto;
+    width: 100%;
+    margin: auto;
+    border: 2px solid var(--fondo2);
+    
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+    background-color: var(--fondo);
+}
